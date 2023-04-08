@@ -1,0 +1,62 @@
+Case Study: Cyclistics 2022
+Beth Mara February 2023
+
+This information is in keeping with the requirements for Coursera’s Capstone Requirement for a Google Certificate in Data Analytics and follows the "Ask, Prepare, Analyze, Share, Act" (APASA) template is a structured approach for presenting data analysis to stakeholders in a business setting. 
+
+ASK:
+Cyclistic is a successful bike-share offering in Chicago with a fleet of 5,824 bicycles and 692 stations.
+The director of marketing wants to maximize annual memberships to fuel future growth.
+Questions to be answered include how annual members and casual riders use Cyclistic bikes differently and how to influence casual riders to become members.
+Metrics used to measure data include ride type, start and end stations, and 7-day usage behavior and was collected from January - December 2022.
+The audience for this analysis is the director of marketing and the Cyclistic executive team.
+
+PREPARE:
+
+The data is stored on Amazon Web Server in CSV files organized by month, containing ride type, user type, start and end station IDs and coordinates.
+
+To prepare Cyclistic's bike-sharing data for analysis, the following steps were taken:
+
+The majority of the data meets ROCCC requirements, but 7% of the data is missing both station names and IDs, accounting for approximately 30% of transactions. However, the data is current, reliable, original, comprehensive, and cited.
+Excel was used for quick analysis of counts, averages, and identifying missing data due to the size of the data sets, which precluded making a comprehensive database.
+The cleaned data was then imported into RStudio where it was subject to further scrutiny, monthly datasets were combined, and columns and values were transformed to capture their attributes.
+The 12 monthly data files were combined into one.
+Duplicate record ID numbers, records with missing start or end stations, and records with very short or very long ride durations were extracted, visualized, and analyzed using the following RStudio packages:
+
+
+
+By taking these steps, the data was prepared for further analysis while ensuring that any potential issues or outliers were addressed.
+
+
+ANALYZE:
+RStudio used to clean the data and extract various information.
+Mean, median, maximum and minimum ride duration, average ride length by day and rider type, count of trips by rider type, count of trips by bicycle type, count of number of start stations determined.
+Ride duration, times of day for rides, days of the week for rides, months of the year of the rides, top five start and end stations by user type determined.
+Tables were created for granular analysis of data.
+“Top 10 Launch Station” data for casual and member users was imported into Google Maps to create a unique map for each user type highlighting geographic differences in groups.
+The majority of rides were taken by Members vs Casual Users (61 vs 39%).
+Usage by Month: 
+Casual Riders There is a spike the number of Casual Riders in June, July and August. These three months accounted for ~ 49% of rides. 
+Member Riders Ridership of Members also increased in June, July and August but continued to remain relatively high thru October. The months of June, July and August constituted ~39% of rides for this group.
+Geography: There was a substantial Casual User cluster at downtown lakeside rental locations. The most popular Casual User rental site, located at Streter Drive and Grand Avenue was over 2.3-fold more commonly used the the top Member User station located at Kingsbury St and Kinzie Street.
+
+SHARE: Summary of the findings can be found on LinkedIn and more detailed analysis with monthly data, user preferences, geographic location and statistical analysis have been uploaded to GitHub. 
+
+ACT: 
+From January - December of 2022, over 5,436,710 rides were taken in the Chicago area by Cyclistic users. 
+
+
+
+
+
+
+
+
+
+
+Act: (Recommendations) 
+
+Target casual riders in the months of June, July, and August: Based on the data, there is a significant spike in the number of casual riders during the summer months. Therefore, Cyclistics can focus on marketing campaigns to attract more casual riders during this time.
+Use data from top rental sites to target Casual riders. 
+Offer promotions to encourage casual riders to become members: Since the majority of rides were taken by members, Cyclistics can encourage casual riders to become members by offering promotions such as discounts on annual memberships or free trial periods.
+Improve the availability of bikes at popular casual user rental sites: The data shows that there is a substantial cluster of casual riders at downtown lakeside rental locations, and the most popular rental site for casual users is over 2.3-fold more commonly used than the top member user station. Therefore, Cyclistics can improve the availability of bikes at these popular rental sites to cater to the demand.
+Conduct targeted marketing campaigns based on geography: Cyclistics can use the geographic data to conduct targeted marketing campaigns based on the most popular start and end stations for each user type. For example, Cyclistics can target its marketing efforts towards members in the areas where member ridership is high and casual riders in the areas where casual ridership is high.
